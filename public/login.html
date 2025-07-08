@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIN-TRACK Login</title>
+    <link rel="stylesheet" href="/public/assets/css/output.css" />
+    <link rel="stylesheet" href="/public/assets/css/style.css" />
+
+</head>
+
+<body class="flex items-center justify-center min-h-screen text-white">
+    <div class="w-full max-w-sm text-center">
+        <h1 class="text-3xl mb-10 font-bold text-white">FIN-TRACK</h1>
+        <form class="space-y-4">
+            <div class="text-left">
+                <label for="username" class="block text-sm mb-1 text-red-300">Username</label>
+                <input id="username" type="text" placeholder="Username"
+                    class="w-full p-2 input-border bg-transparent text-white rounded" />
+            </div>
+            <div class="text-left">
+                <label for="password" class="block text-sm mb-1 text-red-300">Password</label>
+                <input id="password" type="password" placeholder="Password"
+                    class="w-full p-2 input-border bg-transparent text-white rounded" />
+            </div>
+            <button type="submit"
+                class="w-full mt-4 bg-green-700 hover:bg-green-600 text-white py-2 rounded border border-green-400">
+                Login
+            </button>
+        </form>
+    </div>
+
+    <!-- After the login form or anywhere -->
+    <a href="dashboard.html" class="text-green-400 underline">Continue to Dashboard</a>
+
+</body>
+
+</html>
