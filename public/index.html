@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintrack</title>
+    <link rel="stylesheet" href="/public/assets/css/output.css">
+    <link rel="stylesheet" href="/public/assets/css/style.css">
+</head>
+
+<body>
+
+    </head>
+
+    <body class="text-white p-6">
+        <!-- Header Section -->
+        <div class="flex justify-between items-center mb-6">
+            <h1 class="text-3xl font-bold neon-text">FIN-TRACK</h1>
+            <div class="flex items-center space-x-2">
+                <img src="/public/images/bike.jpg" alt="Profile" class="w-8 h-8 rounded-full object-cover" />
+
+                <span>Welcome, John Wick</span>
+            </div>
+        </div>
+
+        <!-- Summary Cards -->
+        <div class="flex space-x-6 mb-8 ml-65">
+            <div class="card text-orange-400 mr-5">
+                <p class="text-2xl font-bold">20,000</p>
+                <p>Balance</p>
+            </div>
+            <div class="card text-green-400">
+                <p class="text-2xl font-bold">50,000</p>
+                <p>Income</p>
+            </div>
+            <div class="card text-red-400">
+                <p class="text-2xl font-bold">30,000</p>
+                <p>Expenses</p>
+            </div>
+        </div>
+
+        <!-- Transaction Input Section -->
+        <div class="space-y-4 max-w-lg mb-8 ml-65">
+            <input type="number" placeholder="Amount"
+                class="w-full p-2 input-border bg-transparent text-white rounded" />
+            <select class="w-full p-2 input-border bg-transparent text-white rounded">
+                <option selected disabled>Select Transaction Type</option>
+                <option class="text-black">Income</option>
+                <option class="text-black">Expense</option>
+            </select>
+            <textarea rows="3" placeholder="Description"
+                class="w-full p-2 input-border bg-transparent text-white rounded"></textarea>
+            <button class="bg-green-700 hover:bg-green-600 text-white px-4 py-2 rounded  ml-40">Add
+                Record</button>
+        </div>
+
+        <!-- Search & Filter Section -->
+        <div class="flex justify-between items-center mb-4">
+            <div class="flex space-x-2">
+                <select class="bg-transparent border-2 border-red-400 text-white px-2 py-1 rounded">
+                    <option>All</option>
+                </select>
+                <input type="text" placeholder="Search by description"
+                    class="bg-transparent border-2 border-red-400 text-white px-2 py-1 rounded" />
+                <input type="date" class="bg-transparent border-2 border-red-400 text-white px-2 py-1 rounded" />
+            </div>
+            <button class="bg-green-700 hover:bg-green-600 text-white px-4 py-2 rounded">Export</button>
+        </div>
+
+        <!-- Transaction Table -->
+        <table class="w-full border border-white text-center">
+            <thead class="border-b">
+                <tr>
+                    <th class="p-2">#</th>
+                    <th class="p-2">Amount</th>
+                    <th class="p-2">Date</th>
+                    <th class="p-2">Trx Type</th>
+                    <th class="p-2">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic rows would be inserted here -->
+                <tr class="border-t border-white">
+                    <td class="p-2">1</td>
+                    <td class="p-2">10,000</td>
+                    <td class="p-2">2025-07-08</td>
+                    <td class="p-2">Income</td>
+                    <td class="p-2">Salary</td>
+                </tr>
+                <tr class="border-t border-white">
+                    <td class="p-2">1</td>
+                    <td class="p-2">10,000</td>
+                    <td class="p-2">2025-07-08</td>
+                    <td class="p-2">Income</td>
+                    <td class="p-2">Salary</td>
+                </tr>
+                <tr class="border-t border-white">
+                    <td class="p-2">1</td>
+                    <td class="p-2">10,000</td>
+                    <td class="p-2">2025-07-08</td>
+                    <td class="p-2">Income</td>
+                    <td class="p-2">Salary</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </body>
+
+</html>
