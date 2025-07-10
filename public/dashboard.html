@@ -111,28 +111,7 @@
             </tbody>
         </table>
 
-        <script>
-            // Sample JavaScript to handle form submission and table updates
-            document.querySelector('button').addEventListener('click', function () {
-                const amount = document.querySelector('input[type="number"]').value;
-                const trxType = document.querySelector('select').value;
-                const description = document.querySelector('textarea').value;
-
-                if (amount && trxType && description) {
-                    const tableBody = document.querySelector('tbody');
-                    const newRow = document.createElement('tr');
-                    newRow.classList.add('border-t', 'border-white');
-                    newRow.innerHTML = `
-                        <td class="p-2">1</td>
-                        <td class="p-2">${amount}</td>
-                        <td class="p-2">${new Date().toISOString().split('T')[0]}</td>
-                        <td class="p-2">${trxType}</td>
-                        <td class="p-2">${description}</td>
-                    `;
-                    tableBody.appendChild(newRow);
-                }
-            });
-        </script>
+        <script src="/public/assets/js/script.js"></script>
     </body>
 
 </html>
